@@ -31,7 +31,7 @@ section {
     margin: 0 auto;
 }
 
-.menuBlock {
+/* .menuBlock {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ section {
     right: -100%;
     margin: auto;
     transition: 1s;
-}
+} */
 
 .menuBlockActive {
     right: 0;
