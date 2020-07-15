@@ -46,8 +46,9 @@ section {
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
+    visibility: hidden;
     width: 300px;
-    height: 60vh;
+    height: 340px;
     bottom: 0;
     top: 0;
     right: -100%;
@@ -57,6 +58,7 @@ section {
 }
 
 .menuBlockActive {
+    visibility: visible;
     right: 0;
 }
 
@@ -66,6 +68,7 @@ section {
 }
 
 /* -----------============ header ============----------- */
+
 header {
     background: url(./assets/4015db3053c401bf5c6d3eef84d7c583.jpg) center no-repeat;
     background-size: cover;
@@ -155,18 +158,6 @@ h2 {
     transition: 1s;
 }
 
-.header-netWorks div:hover {
-    animation: shake .3s forwards ease infinite;
-}
-
-.header-netWorks-viber:hover {
-    box-shadow: 0px 0px 0 4px #0091c8;
-}
-
-.header-netWorks-teleg:hover {
-    box-shadow: 0px 0px 0 4px #681f7b;
-}
-
 @keyframes shake {
     0% {
         transform: rotate(0deg);
@@ -222,4 +213,17 @@ h2 {
     }
 }
 
+@media (min-width: 1024px) {
+    .header-netWorks div:hover {
+        animation: shake .3s forwards ease infinite;
+    }
+    
+    .header-netWorks-viber:hover {
+        box-shadow: 0px 0px 0 4px #0091c8;
+    }
+    
+    .header-netWorks-teleg:hover {
+        box-shadow: 0px 0px 0 4px #681f7b;
+    }
+}
 /* -----------============ The End ============----------- */
