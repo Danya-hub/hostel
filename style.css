@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 button {
     display: block;
     background: unset;
@@ -215,7 +219,7 @@ h2 {
     box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
     background-size: cover;
     width: 100vw;
-    height: 400px;
+    height: 450px;
 }
 
 .slick-list {
@@ -285,13 +289,9 @@ h2 {
 
 .slick-dots {
     position: absolute;
-}
-
-.slick-dots {
-    position: absolute;
     display: flex;
     width: fit-content;
-    bottom: 1em;
+    bottom: 2em;
     left: 0;
     right: 0;
     margin: auto;
@@ -314,12 +314,12 @@ h2 {
 
 /* -----------============ hostelInfo ============----------- */
 
-/* .hostelInfo {
+.hostelInfo {
     background: url(./assets/background/forest.jpg) center no-repeat;
     background-size: cover;
     width: 100vw;
     height: 500px;
-} */
+}
 
 /* -----------============ media ============----------- */
 
