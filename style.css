@@ -57,18 +57,8 @@ section {
     transition: 1s;
     z-index: 999;
 }
-/* 
-@keyframes movement {
-    0% {
-        right: -100%;
-    }
-    100% {
-        right: 0;
-    }
-} */
 
 .menuBlockActive {
-    /* animation: movement 1s ease forwards; */
     right: 0;
     visibility: visible;
 }
@@ -258,6 +248,7 @@ h2 {
 
 .slider-blockImg img {
     border-radius: 10px;
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0);
 }
 
 .slick-center {
