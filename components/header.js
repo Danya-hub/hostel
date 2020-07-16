@@ -7,7 +7,8 @@ const header = () => {
         menuBlock = document.querySelector('.menuBlock'),
         navigation = document.querySelector('.navigation'),
         header = document.querySelector('.header'),
-        blackout = document.querySelector('.blackout');
+        blackout = document.querySelector('.blackout'),
+        slickArrow = document.querySelector('.slick-arrow');
     const laptopChanges = () => {
         if (laptop.matches) {
             menuLink.style.display = 'flex';

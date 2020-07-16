@@ -22,6 +22,7 @@ img {
 section {
     width: 80%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .blackout {
@@ -39,11 +40,11 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: url(./assets/modalIcon.png) center no-repeat;
+    background: url(./assets/background/modalBackground.png) center no-repeat;
     background-blend-mode: multiply;
     background-color: silver;
     background-size: cover;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     visibility: hidden;
@@ -70,10 +71,11 @@ section {
 /* -----------============ header ============----------- */
 
 header {
-    background: url(./assets/4015db3053c401bf5c6d3eef84d7c583.jpg) center no-repeat;
+    background: url(./assets/background/4015db3053c401bf5c6d3eef84d7c583.jpg) center no-repeat;
     background-size: cover;
     width: 100vw;
     height: 130px;
+    user-select: none;
 }
 
 .header {
@@ -137,8 +139,8 @@ h2 {
     height: 2px;
     left: -1em;
     top: 0.6em;
-    opacity: 0;
     transition: .5s;
+    opacity: 0;
 }
 
 .header-listItem-links:hover::before {
@@ -147,7 +149,7 @@ h2 {
 
 .header-netWorks {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 140px;
 }
 
@@ -205,11 +207,113 @@ h2 {
     transform: translateY(-15px) rotate(45deg);
 }
 
+/* -----------============ slider ============----------- */
+
+.slider {
+    position: relative;
+    background: url(./assets/background/wood_boards_001.jpg) center no-repeat;
+    box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    width: 100vw;
+    height: 400px;
+    padding: 0 25px;
+}
+
+.slick-list {
+    position: absolute;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slider-blockImg {
+    text-align: center;
+    height: fit-content;
+    margin: 10px;
+    outline: none;
+    transition: 1s;
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.slick-center {
+    transform: unset;
+    opacity: 1;
+}
+
+.slick-arrow {
+    position: absolute;
+    background: url(./assets/logo/button.svg) center no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 3;
+}
+
+.slick-disabled {
+    opacity: 0.4;
+}
+
+.slick-prev {
+    left: 1em;
+}
+
+.slick-next {
+    right: 1em;
+    transform: rotate(180deg);
+}
+
+.slick-dots {
+    position: absolute;
+}
+
+.slick-dots {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slick-dots button {
+    font-size: 0;
+    background-color: grey;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+.slick-active button {
+    background: #fff;
+}
+
 /* -----------============ media ============----------- */
 
 @media (min-width: 855px) {
     .header-list {
         flex-direction: row;
+        max-width: 75%;
+    }
+
+    .slick-list {
+        max-width: 75%;
     }
 }
 
@@ -217,13 +321,14 @@ h2 {
     .header-netWorks div:hover {
         animation: shake .3s forwards ease infinite;
     }
-    
+
     .header-netWorks-viber:hover {
-        box-shadow: 0px 0px 0 4px #0091c8;
-    }
-    
-    .header-netWorks-teleg:hover {
         box-shadow: 0px 0px 0 4px #681f7b;
     }
+
+    .header-netWorks-teleg:hover {
+        box-shadow: 0px 0px 0 4px #0091c8;
+    }
 }
+
 /* -----------============ The End ============----------- */
