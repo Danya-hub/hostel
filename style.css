@@ -312,6 +312,15 @@ h2 {
     transform: scale(1.4);
 }
 
+/* -----------============ hostelInfo ============----------- */
+
+/* .hostelInfo {
+    background: url(./assets/background/forest.jpg) center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+} */
+
 /* -----------============ media ============----------- */
 
 @media (min-width: 855px) {
