@@ -52,15 +52,22 @@ section {
     height: 340px;
     bottom: 0;
     top: 0;
-    right: -100%;
     margin: auto;
-    transition: 1s;
     z-index: 999;
 }
 
+@keyframes movement {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
 .menuBlockActive {
+    animation: movement 1s ease forwards;
     visibility: visible;
-    right: 0;
 }
 
 .menuBlock-title {
@@ -216,7 +223,6 @@ h2 {
     background-size: cover;
     width: 100vw;
     height: 400px;
-    padding: 0 25px;
 }
 
 .slick-list {
@@ -238,12 +244,17 @@ h2 {
 
 .slider-blockImg {
     text-align: center;
+    width: 350px;
     height: fit-content;
-    margin: 10px;
     outline: none;
     transition: 1s;
     transform: scale(0.8);
+    margin: 10px;
     opacity: 0.7;
+}
+
+.slider-blockImg img {
+    border-radius: 10px;
 }
 
 .slick-center {
@@ -253,7 +264,7 @@ h2 {
 
 .slick-arrow {
     position: absolute;
-    background: url(./assets/logo/button.svg) center no-repeat;
+    background: url(./assets/logo/chevron-arrow-down.svg) center no-repeat;
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -270,11 +281,12 @@ h2 {
 
 .slick-prev {
     left: 1em;
+    transform: rotate(90deg);
 }
 
 .slick-next {
     right: 1em;
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
 }
 
 .slick-dots {
@@ -293,7 +305,8 @@ h2 {
 
 .slick-dots button {
     font-size: 0;
-    background-color: grey;
+    background: transparent;
+    border: 1px solid burlywood;
     border-radius: 50%;
     width: 10px;
     height: 10px;
@@ -301,7 +314,8 @@ h2 {
 }
 
 .slick-active button {
-    background: #fff;
+    background: burlywood;
+    transform: scale(1.4);
 }
 
 /* -----------============ media ============----------- */
