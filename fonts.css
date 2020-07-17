@@ -2,3 +2,13 @@
     src: url(./fonts/RobotoSlab-Medium.ttf);
     font-family: 'RobotoSlab-Medium';
 }
+
+@font-face {
+    src: url(./fonts/RobotoSlab-Bold.ttf);
+    font-family: 'RobotoSlab-Bold';
+}
+
+@font-face {
+    src: url(./fonts/RobotoSlab-Light.ttf);
+    font-family: 'RobotoSlab-Light';
+}

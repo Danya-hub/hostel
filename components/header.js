@@ -8,7 +8,8 @@ const header = () => {
         navigation = document.querySelector('.navigation'),
         header = document.querySelector('.header'),
         blackout = document.querySelector('.blackout'),
-        slickArrow = document.querySelector('.slick-arrow');
+        body = document.querySelector('body');
+
     const laptopChanges = () => {
         if (laptop.matches) {
             menuLink.style.display = 'flex';
@@ -41,9 +42,11 @@ const header = () => {
         if (menuLink.classList.contains('activeMenuLink')) {
             menuBlock.classList.add('menuBlockActive');
             blackout.style.display = 'block';
+            body.style.overflow = 'hidden';
         } else {
             menuBlock.classList.remove('menuBlockActive');
             blackout.style.display = 'none';
+            body.style.overflow = 'unset';
         }
     })
 }
