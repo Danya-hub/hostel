@@ -337,20 +337,18 @@ h2 {
     color: #ffff;
     width: 100vw;
     height: fit-content;
-    padding: 40px 20px;
+    padding: 40px;
 }
 
 .hostelInfo-wrapper {
-    border: 2px dashed #ffff;
-    padding: 10px 20px;
-    max-width: 500px;
-    border-radius: 10px;
+    max-width: 600px;
 }
 
 .hostelInfo-mainTitle {
     font: 100 27px 'RobotoSlab-Bold';
     border-bottom: 2px solid #ffff;
     width: fit-content;
+    margin: auto;
 }
 
 .hostelInfo-blockInfo {
@@ -358,6 +356,21 @@ h2 {
     text-align: justify;
     margin-top: 30px;
     line-height: 1.5;
+}
+
+.hostelInfo-buttonReadMore {
+    font: 100 16px 'RobotoSlab-Medium';
+    background: transparent;
+    border: 2px solid #ffff;
+    padding: 15px 20px;
+    color: #ffff;
+    margin: 40px auto;
+    transition: background .5s, color .5s;
+}
+
+.hostelInfo-buttonReadMore:hover {
+    background: #ffff;
+    color: #000;
 }
 
 /* -----------============ media ============----------- */
@@ -370,6 +383,11 @@ h2 {
 
     .slick-list {
         max-width: 75%;
+    }
+
+    .hostelInfo-mainTitle,
+    .hostelInfo-buttonReadMore {
+        margin: 40px 0;
     }
 }
 
