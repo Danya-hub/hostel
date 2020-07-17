@@ -40,6 +40,21 @@ section {
 
 .menuBlock {
     position: fixed;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    visibility: hidden;
+    width: 300px;
+    height: 340px;
+    bottom: 0;
+    top: 1em;
+    right: -100%;
+    margin: auto;
+    transition: right 1s, visibility 1s;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.menuBlock-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -49,17 +64,8 @@ section {
     background-color: silver;
     background-size: cover;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    visibility: hidden;
-    width: 300px;
-    height: 340px;
-    bottom: 0;
-    top: 0;
-    right: -100%;
-    margin: auto;
-    transition: .5s;
-    z-index: 999;
+    width: 100%;
+    height: 100%;
 }
 
 .menuBlockActive {
@@ -150,7 +156,7 @@ h2 {
     height: 2px;
     left: -1em;
     top: 0.6em;
-    transition: .5s;
+    transition: opacity .5s;
     opacity: 0;
 }
 
@@ -168,7 +174,7 @@ h2 {
     width: 50px;
     border-radius: 50%;
     cursor: pointer;
-    transition: 1s;
+    transition: box-shadow 1s;
 }
 
 @keyframes shake {
@@ -202,7 +208,7 @@ h2 {
     border-radius: 10px;
     width: 100%;
     height: 5px;
-    transition: .3s;
+    transition: transform .3s;
 }
 
 .activeMenuLink span {
@@ -252,9 +258,9 @@ h2 {
     width: 350px;
     height: fit-content;
     outline: none;
-    transition: 1s;
+    transition: opacity 1s, transform 1s;
     transform: scale(0.8);
-    margin: 10px;
+    margin: 20px;
     opacity: 0.7;
 }
 
@@ -342,7 +348,7 @@ h2 {
 }
 
 .hostelInfo-mainTitle {
-    font: 100 30px 'RobotoSlab-Bold';
+    font: 100 27px 'RobotoSlab-Bold';
     border-bottom: 2px solid #ffff;
     width: fit-content;
 }
@@ -351,10 +357,7 @@ h2 {
     font: 100 16px 'RobotoSlab-Light';
     text-align: justify;
     margin-top: 30px;
-    width: 100%;
-    height: 400px;
     line-height: 1.5;
-    overflow: scroll;
 }
 
 /* -----------============ media ============----------- */

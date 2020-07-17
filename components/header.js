@@ -8,12 +8,13 @@ const header = () => {
         navigation = document.querySelector('.navigation'),
         header = document.querySelector('.header'),
         blackout = document.querySelector('.blackout'),
+        menuBlockWrapper = document.querySelector('.menuBlock-wrapper'),
         body = document.querySelector('body');
 
     const laptopChanges = () => {
         if (laptop.matches) {
             menuLink.style.display = 'flex';
-            menuBlock.append(netWorks)
+            menuBlockWrapper.append(netWorks)
         } else {
             header.appendChild(netWorks);
             menuLink.style.display = 'none';
@@ -22,7 +23,7 @@ const header = () => {
 
     const tabletChanges = () => {
         if (tablet.matches) {
-            menuBlock.append(listItem)
+            menuBlockWrapper.append(listItem)
         } else {
             navigation.append(listItem)
         }

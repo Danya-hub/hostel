@@ -5,10 +5,10 @@ $(document).ready(function(){
         adaptiveHeight: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 600,
+        speed: 800,
         infinite: false, //?
         autoplay: true,
-        autoplaySpeed: 2500, 
+        autoplaySpeed: 2800, 
         pauseOnHover: true, 
         pauseOnFocus: false, 
         draggable: false,
