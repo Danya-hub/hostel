@@ -208,7 +208,7 @@ h2 {
 }
 
 .menuBlock {
-    position: absolute;
+    position: fixed;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -357,6 +357,7 @@ h2 {
 /* -----------============ hostelInfo ============----------- */
 
 .hostelInfo {
+    position: relative;
     background: url(./assets/background/forest.jpg) center no-repeat;
     background-size: cover;
     box-shadow: inset -1px 101px 53px -77px rgba(0, 0, 0, 0.75);
@@ -405,11 +406,18 @@ button {
 }
 
 .hostelInfo-modalIcon {
+    position: absolute;
     background: #ffff;
     border-radius: 10px;
     max-width: 700px;
     height: fit-content;
     padding: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
 .hostelInfo-modalIcon p {
