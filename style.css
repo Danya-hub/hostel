@@ -40,11 +40,6 @@ section {
     overflow: hidden;
 }
 
-.error {
-    font: 100 20px none !important;
-    color: #ff0000 !important;
-}
-
 .blackout {
     display: none;
     position: fixed;
@@ -60,12 +55,6 @@ header,
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-}
-
-.hostelInfo,
-.menuBlock-wrapper {
-    background-blend-mode: multiply;
-    background-color: silver !important;
 }
 
 /* -----------============ header ============----------- */
@@ -357,7 +346,6 @@ h2 {
 /* -----------============ hostelInfo ============----------- */
 
 .hostelInfo {
-    position: relative;
     background: url(./assets/background/forest.jpg) center no-repeat;
     background-size: cover;
     box-shadow: inset -1px 101px 53px -77px rgba(0, 0, 0, 0.75);
@@ -374,6 +362,7 @@ button {
 
 .hostelInfo-wrapper {
     max-width: 600px;
+    margin: auto;
 }
 
 .hostelInfo-mainTitle {
@@ -406,23 +395,89 @@ button {
 }
 
 .hostelInfo-modalIcon {
-    position: absolute;
+    position: fixed;
     background: #ffff;
     border-radius: 10px;
     max-width: 700px;
     height: fit-content;
-    padding: 20px;
+    padding: 40px 20px;
+    visibility: hidden;
     top: 0;
     bottom: 0;
     margin: auto;
     left: 0;
     right: 0;
     z-index: 999;
+    transition: opacity .5s, visibility .5s;
+    opacity: 0;
+}
+
+.hostelInfo-modalIcon-wrapper {
+    width: 100%;
+    height: 430px;
+    overflow: scroll;
+}
+
+.hostelInfo-modalIcon-wrapper::-webkit-scrollbar {
+    display: unset;
+    width: 20px;
+}
+.hostelInfo-modalIcon-wrapper::-webkit-scrollbar-track {
+    background: #fff;
+}
+.hostelInfo-modalIcon-wrapper::-webkit-scrollbar-thumb {
+    border: 7px solid #ffff;
+    background: #505050;
+    border-radius: 50px;
+}
+
+.hostelInfo-modalIcon-closeButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 0;
+    margin: 5px;
+}
+
+.hostelInfo-modalIcon-closeButton::before,
+.hostelInfo-modalIcon-closeButton::after {
+    content: '';
+    position: absolute;
+    background: #000;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+}
+
+.hostelInfo-modalIcon-closeButton::before {
+    transform: translateX(-15px) rotate(45deg);
+}
+.hostelInfo-modalIcon-closeButton::after {
+    transform: translateX(-15px) rotate(-45deg);
 }
 
 .hostelInfo-modalIcon p {
     color: #000;
     margin: 0;
+}
+
+/* -----------============ additions ============----------- */
+
+.error {
+    font: 100 20px none;
+    color: #ff0000;
+}
+
+.hostelInfo,
+.menuBlock-wrapper {
+    background-blend-mode: multiply;
+    background-color: silver;
+}
+
+.modalIconActive {
+    visibility: visible;
+    opacity: 1;
 }
 
 /* -----------============ media ============----------- */
@@ -442,6 +497,10 @@ button {
     .hostelInfo-buttonReadMore {
         margin: 40px 0;
     }
+
+    .hostelInfo-wrapper {
+        margin: 0;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -458,6 +517,14 @@ button {
 
     .header-netWorks-teleg:hover {
         box-shadow: 0px 0px 0 4px #0091c8;
+    }
+
+    .hostelInfo-modalIcon-wrapper {
+        overflow: unset;
+    }
+
+    .hostelInfo-modalIcon-wrapper::-webkit-scrollbar {
+        display: none;
     }
 }
 

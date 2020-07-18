@@ -4,8 +4,11 @@
 const hostelInfo = () => {
     const blockInfo = document.querySelector('.hostelInfo-blockInfo'),
         buttonReadMore = document.querySelector('.hostelInfo-buttonReadMore'),
-        modalIconHostel = document.querySelector('.hostelInfo-modalIcon');
-
+        modalIconWrapperHostel = document.querySelector('.hostelInfo-modalIcon-wrapper'),
+        modalIconHostel = document.querySelector('.hostelInfo-modalIcon'),
+        modalIconCloseButton = document.querySelector('.hostelInfo-modalIcon-closeButton'),
+        blackout = document.querySelector('.blackout'),
+        body = document.querySelector('body')
 
     const infoHostel = `                    
     <p class="hostelInfo-blockInfo-txt">
@@ -36,9 +39,18 @@ const hostelInfo = () => {
     blockInfo.innerHTML = infoHostel.split('').slice(0, 700).join('') + '...';
 
     const openModalIconHostel = () => {
-        modalIconHostel.innerHTML = infoHostel;
+        modalIconWrapperHostel.innerHTML = infoHostel;
         buttonReadMore.addEventListener('click', () => {
-
+            modalIconHostel.classList.add('modalIconActive');
+            blackout.style.display = 'unset';
+            body.style.overflow = 'hidden';
+            if (modalIconHostel.classList.contains('modalIconActive')) {
+                modalIconCloseButton.addEventListener('click', () => {
+                    modalIconHostel.classList.remove('modalIconActive');
+                    blackout.style.display = 'none';
+                    body.style.overflow = 'unset';
+                })
+            }
         })
     }
 
