@@ -84,7 +84,6 @@ h2 {
 }
 
 .header {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,7 +208,7 @@ h2 {
 }
 
 .menuBlock {
-    position: fixed;
+    position: absolute;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -220,7 +219,7 @@ h2 {
     top: 1em;
     right: -100%;
     margin: auto;
-    transition: right 1s, visibility 1s;
+    transition: right .5s, visibility .5s;
     overflow: hidden;
     z-index: 999;
 }
@@ -383,7 +382,8 @@ button {
     margin: auto;
 }
 
-.hostelInfo-blockInfo {
+.hostelInfo-blockInfo,
+.hostelInfo-modalIcon p {
     font: 100 16px 'RobotoSlab-Light';
     text-align: justify;
     margin-top: 30px;
@@ -405,7 +405,16 @@ button {
 }
 
 .hostelInfo-modalIcon {
-    background: ;
+    background: #ffff;
+    border-radius: 10px;
+    max-width: 700px;
+    height: fit-content;
+    padding: 20px;
+}
+
+.hostelInfo-modalIcon p {
+    color: #000;
+    margin: 0;
 }
 
 /* -----------============ media ============----------- */

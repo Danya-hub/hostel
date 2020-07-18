@@ -3,7 +3,9 @@
 
 const hostelInfo = () => {
     const blockInfo = document.querySelector('.hostelInfo-blockInfo'),
-        buttonReadMore = document.querySelector('.hostelInfo-buttonReadMore');
+        buttonReadMore = document.querySelector('.hostelInfo-buttonReadMore'),
+        modalIconHostel = document.querySelector('.hostelInfo-modalIcon');
+
 
     const infoHostel = `                    
     <p class="hostelInfo-blockInfo-txt">
@@ -27,14 +29,20 @@ const hostelInfo = () => {
         комнатах
         рассчитано на 8, 10, 12 и 22 человека. Каждое койко-место включает в себя: кровать, подушку,
         матрац,
-        одеяло. На территории имеется место для парковки нескольких автомобилей или автобусов.</p>
-    </p>`;
+        одеяло. На территории имеется место для парковки нескольких автомобилей или автобусов.
+    </p>
+    `;
 
     blockInfo.innerHTML = infoHostel.split('').slice(0, 700).join('') + '...';
 
-    buttonReadMore.addEventListener('click', () => {
+    const openModalIconHostel = () => {
+        modalIconHostel.innerHTML = infoHostel;
+        buttonReadMore.addEventListener('click', () => {
 
-    })
+        })
+    }
+
+    openModalIconHostel();
 }
 
 export default hostelInfo;
