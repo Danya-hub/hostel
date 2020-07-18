@@ -128,6 +128,9 @@ h2 {
     left: -1em;
     top: 0.6em;
     transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
     opacity: 0;
 }
 
@@ -146,6 +149,9 @@ h2 {
     border-radius: 50%;
     cursor: pointer;
     transition: box-shadow 1s;
+    -ms-transition: box-shadow 1s;
+    -webkit-transition: box-shadow 1s;
+    -moz-transition: box-shadow 1s;
 }
 
 @keyframes shake {
@@ -181,6 +187,9 @@ h2 {
     width: 100%;
     height: 5px;
     transition: transform .3s;
+    -ms-transition: transform .3s;
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
 }
 
 .activeMenuLink span {
@@ -201,6 +210,7 @@ h2 {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     visibility: hidden;
     width: 300px;
     height: 340px;
@@ -209,6 +219,9 @@ h2 {
     right: -100%;
     margin: auto;
     transition: right .5s, visibility .5s;
+    -ms-transition: right .5s, visibility .5s;
+    -webkit-transition: right .5s, visibility .5s;
+    -moz-transition: right .5s, visibility .5s;
     overflow: hidden;
     z-index: 999;
 }
@@ -248,6 +261,7 @@ h2 {
     position: relative;
     background: url(./assets/background/wood_boards_001.jpg) center no-repeat;
     box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
     background-size: cover;
     width: 100vw;
     height: 450px;
@@ -275,8 +289,11 @@ h2 {
     width: 350px;
     height: fit-content;
     outline: none;
-    transition: opacity 1s, transform 1s;
     transform: scale(0.8);
+    transition: opacity 1s, transform 1s;
+    -ms-transition: opacity 1s, transform 1s;
+    -webkit-transition: opacity 1s, transform 1s;
+    -moz-transition: opacity 1s, transform 1s;
     margin: 20px;
     opacity: 0.7;
 }
@@ -284,6 +301,7 @@ h2 {
 .slider-blockImg img {
     border-radius: 10px;
     box-shadow: 0px 0px 13px 1px rgba(0, 0, 0);
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0, 0, 0);
 }
 
 .slick-center {
@@ -349,6 +367,7 @@ h2 {
     background: url(./assets/background/forest.jpg) center no-repeat;
     background-size: cover;
     box-shadow: inset -1px 101px 53px -77px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset -1px 101px 53px -77px rgba(0, 0, 0, 0.75);
     width: 100vw;
     height: fit-content;
     padding: 40px;
@@ -387,6 +406,9 @@ button {
     padding: 15px 20px;
     margin: 40px auto;
     transition: background .5s, color .5s;
+    -ms-transition: background .5s, color .5s;
+    -webkit-transition: background .5s, color .5s;
+    -moz-transition: background .5s, color .5s;
 }
 
 .hostelInfo-buttonReadMore:hover {
@@ -409,6 +431,9 @@ button {
     right: 0;
     z-index: 999;
     transition: opacity .5s, visibility .5s;
+    -ms-transition: opacity .5s, visibility .5s;
+    -webkit-transition: opacity .5s, visibility .5s;
+    -moz-transition: opacity .5s, visibility .5s;
     opacity: 0;
 }
 
@@ -486,7 +511,6 @@ button {
     .header-list {
         flex-direction: row;
         -ms-flex-direction: row;
-        max-width: 75%;
     }
 
     .slick-list {
@@ -513,10 +537,12 @@ button {
 
     .header-netWorks-viber:hover {
         box-shadow: 0px 0px 0 4px #681f7b;
+        -webkit-box-shadow: 0px 0px 0 4px #681f7b;
     }
 
     .header-netWorks-teleg:hover {
         box-shadow: 0px 0px 0 4px #0091c8;
+        -webkit-box-shadow: 0px 0px 0 4px #0091c8;
     }
 
     .hostelInfo-modalIcon-wrapper {

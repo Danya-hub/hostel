@@ -9,6 +9,7 @@ const header = () => {
         header = document.querySelector('.header'),
         blackout = document.querySelector('.blackout'),
         menuBlockWrapper = document.querySelector('.menuBlock-wrapper'),
+        listItemLinks = document.querySelectorAll('.header-listItem-links'),
         body = document.querySelector('body');
 
     const laptopChanges = () => {
@@ -50,6 +51,15 @@ const header = () => {
             body.style.overflow = 'unset';
         }
     })
+
+    for (const listItemLink of listItemLinks) {
+        listItemLink.addEventListener('click', () => {
+            menuLink.classList.remove('activeMenuLink');
+            menuBlock.classList.remove('menuBlockActive');
+            blackout.style.display = 'none';
+            body.style.overflow = 'unset';
+        })
+    }
 }
 
 export default header;
