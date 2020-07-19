@@ -6,9 +6,9 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 800,
-        infinite: false, //?
+        infinite: false, 
         autoplay: true,
-        autoplaySpeed: 2800, 
+        autoplaySpeed: 2500, 
         pauseOnHover: true, 
         pauseOnFocus: false, 
         draggable: false,

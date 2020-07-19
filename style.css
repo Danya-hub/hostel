@@ -238,7 +238,6 @@ header a, header h2 {
     display: flex;
     background: url(./assets/background/modalBackground.jpg) center no-repeat;
     background-size: cover;
-    background-blend-mode: multiply;
     flex-direction: column;
     -ms-flex-direction: column;
     justify-content: space-evenly;
