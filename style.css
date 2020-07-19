@@ -58,7 +58,7 @@ header,
 }
 
 .lineBetweenSections {
-    background: url(http://s1.litepic.ru/120071914daefeb4372ef95c5a12.jpg) center no-repeat;
+    background: url(./assets/background/4015db3053c401bf5c6d3eef84d7c583.jpg) center no-repeat;
     background-size: cover;
     width: 100vw;
     height: 65px;
@@ -67,7 +67,7 @@ header,
 /* -----------============ header ============----------- */
 
 header {
-    background: url(http://s1.litepic.ru/120071914daefeb4372ef95c5a12.jpg) center no-repeat;
+    background: url(./assets/background/4015db3053c401bf5c6d3eef84d7c583.jpg) center no-repeat;
     background-size: cover;
     width: 100vw;
     height: 130px;
@@ -236,7 +236,7 @@ header a, header h2 {
 
 .menuBlock-wrapper {
     display: flex;
-    background: url(http://s1.litepic.ru/12007191c841d01aaef12db3df83.jpg) center no-repeat;
+    background: url(./assets/background/modalBackground.jpg) center no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
     flex-direction: column;
@@ -261,7 +261,7 @@ header a, header h2 {
 
 .slider {
     position: relative;
-    background: url(http://s1.litepic.ru/12007191b3e9b67364ff231ba456.jpg) center no-repeat;
+    background: url(./assets/background/wood_boards_001.jpg) center no-repeat;
     box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
     background-size: cover;
@@ -365,7 +365,7 @@ header a, header h2 {
 /* -----------============ hostelInfo ============----------- */
 
 .hostelInfo {
-    background: url(http://s1.litepic.ru/120071916020f02ebdb440d277e0.jpg) center no-repeat;
+    background: url(./assets/background/forest.jpg) center no-repeat;
     background-size: cover;
     box-shadow: inset -1px 101px 53px -77px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: inset -1px 101px 53px -77px rgba(0, 0, 0, 0.75);
