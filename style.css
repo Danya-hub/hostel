@@ -262,7 +262,7 @@ header a, header h2 {
 
 .slider {
     position: relative;
-    background: url(./assets/background/la-lueur_1920x1080.jpg) center no-repeat;
+    background: url(./assets/background/la-lueur_1920x1080.jpg) bottom no-repeat;
     background-size: cover;
     height: 450px;
 }
