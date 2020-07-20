@@ -34,6 +34,10 @@ img {
     width: 100%;
 }
 
+span {
+    display: block;
+}
+
 section {
     overflow: hidden;
     width: 100vw;
@@ -51,7 +55,8 @@ section {
 
 button,
 header,
-.slider {
+.slider,
+.priceResidence {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -62,6 +67,21 @@ header,
     background-size: cover;
     width: 100vw;
     height: 65px;
+}
+
+.slider,
+.hostelInfo,
+.priceResidence {
+    box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
+}
+
+.hostelInfo-mainTitle,
+.priceResidence-mainTitle {
+    font: 100 27px 'RobotoSlab-Bold';
+    border-bottom: 2px solid #ffff;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 /* -----------============ header ============----------- */
@@ -84,7 +104,7 @@ header a, header h2 {
     align-items: center;
     width: 80%;
     height: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .navigation {
@@ -200,19 +220,6 @@ header a, header h2 {
     -moz-transition: transform .3s;
 }
 
-.activeMenuLink span {
-    visibility: hidden;
-    opacity: 0;
-}
-
-.activeMenuLink::before {
-    transform: translateY(15px) rotate(-45deg);
-}
-
-.activeMenuLink::after {
-    transform: translateY(-15px) rotate(45deg);
-}
-
 .menuBlock {
     position: fixed;
     border-bottom-left-radius: 20px;
@@ -225,7 +232,7 @@ header a, header h2 {
     bottom: 0;
     top: 1em;
     right: -100%;
-    margin: auto;
+    margin: auto 0;
     transition: right .5s, visibility .5s;
     -ms-transition: right .5s, visibility .5s;
     -webkit-transition: right .5s, visibility .5s;
@@ -246,11 +253,6 @@ header a, header h2 {
     height: 100%;
 }
 
-.menuBlockActive {
-    right: 0;
-    visibility: visible;
-}
-
 .menuBlock-title {
     font-size: 23px;
     border-bottom: 2px solid #fff;
@@ -260,9 +262,7 @@ header a, header h2 {
 
 .slider {
     position: relative;
-    background: url(./assets/background/wood_boards_001.jpg) center no-repeat;
-    box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
+    background: url(./assets/background/la-lueur_1920x1080.jpg) center no-repeat;
     background-size: cover;
     height: 450px;
 }
@@ -277,7 +277,6 @@ header a, header h2 {
     margin: auto;
     overflow: hidden;
 }
-
 
 .slick-track {
     display: flex;
@@ -366,8 +365,6 @@ header a, header h2 {
 .hostelInfo {
     background: url(./assets/background/forest.jpg) center no-repeat;
     background-size: cover;
-    box-shadow: inset -1px 101px 53px -77px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: inset -1px 101px 53px -77px rgba(0, 0, 0, 0.75);
     padding: 40px;
 }
 
@@ -379,14 +376,6 @@ header a, header h2 {
 
 .hostelInfo-wrapper {
     max-width: 600px;
-    margin: auto;
-}
-
-.hostelInfo-mainTitle {
-    font: 100 27px 'RobotoSlab-Bold';
-    border-bottom: 2px solid #ffff;
-    width: fit-content;
-    margin: auto;
 }
 
 .hostelInfo-blockInfo,
@@ -488,16 +477,75 @@ header a, header h2 {
 /* -----------============ priceResidence ============----------- */
 
 .priceResidence {
-    background: url(./assets/background) center no-repeat;
+    background: url(./assets/background/doski-derevo-fon-1.jpg) center no-repeat;
     background-size: cover;
+    color: #ffff;
+    padding: 40px 0;
+}
+
+.priceResidence-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.priceResidence-wrapper>div {
+    background: url(./assets/background/abstract-1846392_960_720.jpg) center no-repeat;
+    background-size: cover;
+    border: 2px solid #503a31;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    padding: 20px 0;
+    animation: verticalMovement 4s forwards ease infinite;
+    -webkit-animation: verticalMovement 4s forwards ease infinite;
+    -moz-animation: verticalMovement 4s forwards ease infinite;
+    -o-animation: verticalMovement 4s forwards ease infinite;
+}
+
+@keyframes verticalMovement {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.priceResidence-listCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.priceResidence-listCardsItem {
+    display: flex;
+    border-bottom: 1px dashed #ffff;
+    width: 80%;
+}
+
+.priceResidence-title {
+    font: 100 20px 'RobotoSlab-Bold';
+    border-bottom: 3px solid #503a31;
+    text-align: center;
+}
+
+.priceResidence-listCardsItem span {
+    font: 100 15px 'RobotoSlab-Light';
+    width: 100%;
 }
 
 /* -----------============ additions ============----------- */
-
-.error {
-    font: 100 20px none;
-    color: #ff0000;
-}
 
 .hostelInfo,
 .menuBlock-wrapper {
@@ -508,6 +556,24 @@ header a, header h2 {
 .modalIconActive {
     visibility: visible;
     opacity: 1;
+}
+
+.menuBlockActive {
+    right: 0;
+    visibility: visible;
+}
+
+.activeMenuLink span {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.activeMenuLink::before {
+    transform: translateY(15px) rotate(-45deg);
+}
+
+.activeMenuLink::after {
+    transform: translateY(-15px) rotate(45deg);
 }
 
 /* -----------============ media ============----------- */
@@ -525,10 +591,6 @@ header a, header h2 {
     .hostelInfo-mainTitle,
     .hostelInfo-buttonReadMore {
         margin: 40px 0;
-    }
-
-    .hostelInfo-wrapper {
-        margin: 0;
     }
 }
 
