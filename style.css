@@ -262,7 +262,7 @@ header a, header h2 {
 
 .slider {
     position: relative;
-    background: url(./assets/background/la-lueur_1920x1080.jpg) bottom no-repeat;
+    background: url(./assets/background/0-02-05-42f7c436e22544bf83ee76bc267f929f9d2ae8109a8b4ba049ebcef1186599a9_5fdbf7ea.jpg) center no-repeat;
     background-size: cover;
     height: 450px;
 }
@@ -363,7 +363,7 @@ header a, header h2 {
 /* -----------============ hostelInfo ============----------- */
 
 .hostelInfo {
-    background: url(./assets/background/forest.jpg) center no-repeat;
+    background: url(./assets/background/0-02-05-40b0e3054a22b35f6b571370b09676e423395b7e26243bb23164ac06857bebbf_12bdf01a.jpg) center no-repeat;
     background-size: cover;
     padding: 40px;
 }
@@ -376,6 +376,7 @@ header a, header h2 {
 
 .hostelInfo-wrapper {
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .hostelInfo-blockInfo,
@@ -591,6 +592,10 @@ header a, header h2 {
     .hostelInfo-mainTitle,
     .hostelInfo-buttonReadMore {
         margin: 40px 0;
+    }
+
+    .hostelInfo-wrapper {
+        margin-right: 0;
     }
 }
 
