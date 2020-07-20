@@ -264,6 +264,7 @@ header a, header h2 {
     position: relative;
     background: url(./assets/background/0-02-05-42f7c436e22544bf83ee76bc267f929f9d2ae8109a8b4ba049ebcef1186599a9_5fdbf7ea.jpg) center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 450px;
 }
 
@@ -365,6 +366,7 @@ header a, header h2 {
 .hostelInfo {
     background: url(./assets/background/0-02-05-40b0e3054a22b35f6b571370b09676e423395b7e26243bb23164ac06857bebbf_12bdf01a.jpg) center no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 40px;
 }
 
