@@ -531,7 +531,7 @@ header a, header h2 {
 .priceResidence-listCardsItem {
     display: flex;
     border-bottom: 1px dashed #ffff;
-    width: 80%;
+    width: 90%;
 }
 
 .priceResidence-title {
@@ -541,7 +541,7 @@ header a, header h2 {
 }
 
 .priceResidence-listCardsItem span {
-    font: 900 15px 'RobotoSlab-Regular';
+    font: 100 17px 'RobotoSlab-Regular';
     width: 100%;
 }
 
