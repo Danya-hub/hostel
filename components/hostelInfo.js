@@ -2,7 +2,7 @@
 
 
 const hostelInfo = () => {
-    const blockInfo = document.querySelector('.hostelInfo-blockInfo'),
+    const wrapperInfo = document.querySelector('.hostelInfo-wrapperInfo'),
         buttonReadMore = document.querySelector('.hostelInfo-buttonReadMore'),
         modalIconWrapperHostel = document.querySelector('.hostelInfo-modalIcon-wrapper'),
         modalIconHostel = document.querySelector('.hostelInfo-modalIcon'),
@@ -11,7 +11,7 @@ const hostelInfo = () => {
         body = document.querySelector('body')
 
     const infoHostel = `                    
-    <p class="hostelInfo-blockInfo-txt">
+    <p class="hostelInfo-wrapperInfo-txt">
         Хостел находится в тихом коттеджном районе г. Киева с хорошей
         транспортной развязкой (скоростной
         трамвай №3 и №2, маршрутное такси №304 и №304д и другие автобусы и троллейбусы). До
@@ -36,7 +36,7 @@ const hostelInfo = () => {
     </p>
     `;
 
-    blockInfo.innerHTML = infoHostel.split('').slice(0, 700).join('') + '...';
+    wrapperInfo.innerHTML = infoHostel.split('').slice(0, 700).join('') + '...';
 
     const openModalIconHostel = () => {
         modalIconWrapperHostel.innerHTML = infoHostel;

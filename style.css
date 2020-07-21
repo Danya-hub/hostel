@@ -13,7 +13,7 @@ body {
 }
 
 ::selection {
-    color:gray;
+    color: gray;
     background: #000;
 }
 
@@ -69,9 +69,7 @@ header,
     height: 65px;
 }
 
-.slider,
-.hostelInfo,
-.priceResidence {
+section:not(.header) {
     box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
 }
@@ -93,7 +91,8 @@ header {
     height: 130px;
 }
 
-header a, header h2 {
+header a,
+header h2 {
     font: 100 18px 'RobotoSlab-Medium';
     color: #ffff;
 }
@@ -379,7 +378,7 @@ header a, header h2 {
     margin: 0 auto;
 }
 
-.hostelInfo-blockInfo,
+.hostelInfo-wrapperInfo,
 .hostelInfo-modalIcon p {
     font: 100 16px 'RobotoSlab-Light';
     text-align: justify;
@@ -435,9 +434,11 @@ header a, header h2 {
     display: unset;
     width: 20px;
 }
+
 .hostelInfo-modalIcon-wrapper::-webkit-scrollbar-track {
     background: #fff;
 }
+
 .hostelInfo-modalIcon-wrapper::-webkit-scrollbar-thumb {
     border: 7px solid #ffff;
     background: #505050;
@@ -466,6 +467,7 @@ header a, header h2 {
 .hostelInfo-modalIcon-closeButton::before {
     transform: translateX(-15px) rotate(45deg);
 }
+
 .hostelInfo-modalIcon-closeButton::after {
     transform: translateX(-15px) rotate(-45deg);
 }
@@ -513,9 +515,11 @@ header a, header h2 {
     0% {
         transform: translateY(10px);
     }
+
     50% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(10px);
     }
@@ -545,6 +549,22 @@ header a, header h2 {
     font: 900 17px 'RobotoSlab-Regular';
     width: 100%;
 }
+
+/* -----------============ additions ============----------- */
+
+.contacts {
+    display: flex;
+    background: url(./assets/background/0-02-05-3fd0c7959a21b4b88cb025f49b067643a27d1cd7cece542d5624aef112cd09b7_1d0666ab.jpg) center no-repeat;
+    background-size: cover;
+    color: #ffff;
+    padding: 40px 0;
+}
+
+.contacts-mapWrapper {
+    padding: 0 20px;
+}
+
+
 
 /* -----------============ additions ============----------- */
 
@@ -580,6 +600,7 @@ header a, header h2 {
 /* -----------============ media ============----------- */
 
 @media (min-width: 768px) {
+
     .hostelInfo,
     .slider {
         background-attachment: fixed;
