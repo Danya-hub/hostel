@@ -17,6 +17,19 @@ body {
     background: #000;
 }
 
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    color: #ffff;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -87,14 +100,9 @@ section:not(.header) {
 header {
     background: url(./assets/background/4015db3053c401bf5c6d3eef84d7c583.jpg) center no-repeat;
     background-size: cover;
+    font: 100 18px 'RobotoSlab-Medium';
     width: 100vw;
     height: 130px;
-}
-
-header a,
-header h2 {
-    font: 100 18px 'RobotoSlab-Medium';
-    color: #ffff;
 }
 
 .header {
@@ -367,12 +375,6 @@ header h2 {
     padding: 40px;
 }
 
-.hostelInfo p,
-.hostelInfo h1,
-.hostelInfo button {
-    color: #ffff;
-}
-
 .hostelInfo-wrapper {
     max-width: 600px;
     margin: 0 auto;
@@ -482,7 +484,6 @@ header h2 {
 .priceResidence {
     background: url(./assets/background/doski-derevo-fon-1.jpg) center no-repeat;
     background-size: cover;
-    color: #ffff;
     padding: 40px 0;
 }
 
@@ -553,18 +554,10 @@ header h2 {
 /* -----------============ additions ============----------- */
 
 .contacts {
-    display: flex;
     background: url(./assets/background/0-02-05-3fd0c7959a21b4b88cb025f49b067643a27d1cd7cece542d5624aef112cd09b7_1d0666ab.jpg) center no-repeat;
     background-size: cover;
-    color: #ffff;
     padding: 40px 0;
 }
-
-.contacts-mapWrapper {
-    padding: 0 20px;
-}
-
-
 
 /* -----------============ additions ============----------- */
 
