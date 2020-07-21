@@ -581,7 +581,7 @@ header a, header h2 {
 
 /* -----------============ media ============----------- */
 
-@media (min-width: 855px) {
+@media (min-width: 768px) {
     .header-list {
         flex-direction: row;
         -ms-flex-direction: row;

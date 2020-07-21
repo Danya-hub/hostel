@@ -17,7 +17,7 @@ const header = () => {
             menuLink.style.display = 'flex';
             menuBlockWrapper.append(netWorks)
         } else {
-            header.appendChild(netWorks);
+            header.append(netWorks);
             menuLink.style.display = 'none';
         }
     }
@@ -30,7 +30,7 @@ const header = () => {
         }
     }
 
-    const tablet = window.matchMedia('(max-width: 855px)');
+    const tablet = window.matchMedia('(max-width: 760px)');
     tabletChanges(tablet);
     tablet.addListener(tabletChanges);
 
