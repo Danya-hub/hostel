@@ -69,7 +69,8 @@ section {
 button,
 header,
 .slider,
-.priceResidence {
+.priceResidence,
+.contacts {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -88,7 +89,8 @@ section:not(.header) {
 }
 
 .hostelInfo-mainTitle,
-.priceResidence-mainTitle {
+.priceResidence-mainTitle,
+.contacts-mainTitle {
     font: 100 27px 'RobotoSlab-Bold';
     border-bottom: 2px solid #ffff;
     width: fit-content;
@@ -554,9 +556,56 @@ header {
 /* -----------============ additions ============----------- */
 
 .contacts {
-    background: url(./assets/background/0-02-05-3fd0c7959a21b4b88cb025f49b067643a27d1cd7cece542d5624aef112cd09b7_1d0666ab.jpg) center no-repeat;
+    background: url(./assets/background/0-02-05-3fd0c7959a21b4b88cb025f49b067643a27d1cd7cece542d5624aef112cd09b7_a9066adf.jpg) center no-repeat;
     background-size: cover;
-    padding: 40px 0;
+    padding: 40px 20px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.contacts-map {
+    width: 100%;
+    height: 400px;
+}
+
+.contacts-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin: 25px 0 0 20px;
+}
+
+.contacts-wrapperInfo-title {
+    font: 100 23px 'RobotoSlab-Medium';
+}
+
+.contacts-wrapperInfo-txt span {
+    position: relative;
+    font: 100 17px 'RobotoSlab-Regular';
+    margin: 10px 0 0 30px;
+}
+
+.contacts-wrapperInfo-txt span::before {
+    content: '';
+    position: absolute;
+    background: #ffff;
+    width: 10px;
+    height: 3px;
+    left: -1.5em;
+    top: 0.6em;
 }
 
 /* -----------============ additions ============----------- */
@@ -615,6 +664,10 @@ header {
 
     .hostelInfo-wrapper {
         margin-right: 0;
+    }
+
+    .contacts-map {
+        width: 65%;
     }
 }
 
