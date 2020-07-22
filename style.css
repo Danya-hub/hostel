@@ -553,7 +553,7 @@ header {
     width: 100%;
 }
 
-/* -----------============ additions ============----------- */
+/* -----------============ contacts ============----------- */
 
 .contacts {
     background: url(./assets/background/0-02-05-3fd0c7959a21b4b88cb025f49b067643a27d1cd7cece542d5624aef112cd09b7_a9066adf.jpg) center no-repeat;
@@ -588,8 +588,38 @@ header {
     margin: 25px 0 0 20px;
 }
 
+.contacts-wrapperInfo-txt:first-child {
+    border-bottom: 2px solid #ffff;
+    padding-bottom: 15px;
+}
+
 .contacts-wrapperInfo-title {
+    position: relative;
     font: 100 23px 'RobotoSlab-Medium';
+}
+
+.contacts-wrapperInfo-title::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -1.1em;
+    top: 0.3em;
+}
+
+.logoAdress::before {
+    background: url(./assets/logo/pin.svg) center no-repeat;
+    background-size: cover;
+}
+
+.logoTel::before {
+    background: url(./assets/logo/call.svg) center no-repeat;
+    background-size: cover;
+}
+
+.contacts-wrapperInfo-location {
+    width: 200px;
+    height: fit-content;
 }
 
 .contacts-wrapperInfo-txt span {
