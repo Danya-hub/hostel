@@ -69,8 +69,7 @@ section {
 button,
 header,
 .slider,
-.priceResidence,
-.contacts {
+.priceResidence {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -95,6 +94,9 @@ section:not(.header) {
     border-bottom: 2px solid #ffff;
     width: fit-content;
     margin: 0 auto;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 /* -----------============ header ============----------- */
@@ -484,7 +486,7 @@ header {
 /* -----------============ priceResidence ============----------- */
 
 .priceResidence {
-    background: url(./assets/background/doski-derevo-fon-1.jpg) center no-repeat;
+    background: url(./assets/background/) center no-repeat;
     background-size: cover;
     padding: 40px 0;
 }
@@ -556,7 +558,7 @@ header {
 /* -----------============ contacts ============----------- */
 
 .contacts {
-    background: url(./assets/background/729217260.jpg) center no-repeat;
+    background: url(./assets/background/doski-derevo-fon-1.jpg) center no-repeat;
     background-size: cover;
     padding: 40px 20px;
 }
@@ -565,6 +567,8 @@ header {
     display: flex;
     background: url(./assets/background/0-02-05-3fd0c7959a21b4b88cb025f49b067643a27d1cd7cece542d5624aef112cd09b7_a9066adf.jpg) center no-repeat;
     background-size: cover;
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
     justify-content: space-between;
     border-radius: 10px;
     flex-wrap: wrap;
