@@ -8,7 +8,7 @@ $(document).ready(function(){
         speed: 800,
         infinite: false, 
         autoplay: true,
-        autoplaySpeed: 2500, 
+        autoplaySpeed: 2000, 
         pauseOnHover: true, 
         pauseOnFocus: false, 
         draggable: false,
