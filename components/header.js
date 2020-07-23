@@ -3,7 +3,7 @@
 const header = () => {
     const netWorks = document.querySelector('.header-netWorks'),
         listItem = document.querySelector('.header-list'),
-        menuLink = document.querySelector('.header-menuLink'),
+        menuLink = document.querySelector('.header-menuLinks'),
         menuBlock = document.querySelector('.menuBlock'),
         navigation = document.querySelector('.navigation'),
         header = document.querySelector('.header'),

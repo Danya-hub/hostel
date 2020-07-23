@@ -20,7 +20,8 @@ window.addEventListener('scroll', () => {
         buttonUp.style.opacity = 0;
     }
 
-    if (scroll >= 300) {
+    if (scroll > 300) {
+        hostelInfoWrapper.style.visibility = 'visible';
         hostelInfoWrapper.style.transform = 'translateY(0px)';
         hostelInfoWrapper.style.opacity = '1';
     } 

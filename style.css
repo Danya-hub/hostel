@@ -224,7 +224,7 @@ header {
     }
 }
 
-.header-menuLink {
+.header-menuLinks {
     position: relative;
     flex-direction: column;
     -ms-flex-direction: column;
@@ -234,9 +234,9 @@ header {
     z-index: 997;
 }
 
-.header-menuLink::before,
-.header-menuLink-line,
-.header-menuLink::after {
+.header-menuLinks::before,
+.header-menuLinks-line,
+.header-menuLinks::after {
     content: '';
     background: #ffff;
     border-radius: 10px;
@@ -400,7 +400,8 @@ header {
     max-width: 600px;
     transform: translateY(200px);
     margin: 0 auto;
-    transition: transform 1s, opacity 1s;
+    transition: transform 1s, opacity 1s, visibility 1s;
+    visibility: hidden;
     opacity: 0;
 }
 
