@@ -69,7 +69,7 @@ section {
 button,
 header,
 .slider,
-.priceResidence {
+.footer {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -82,7 +82,7 @@ header,
     height: 65px;
 }
 
-section:not(.header) {
+section:not(.header):not(.footer) {
     box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
 }
@@ -94,9 +94,46 @@ section:not(.header) {
     border-bottom: 2px solid #ffff;
     width: fit-content;
     margin: 0 auto;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
+}
+
+.header-logo,
+.footer-logo {
+    position: relative;
+    background: #ffff;
+    border: 5px double #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.header-logoImg,
+.footer-logoImg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 75%;
+    height: auto;
+}
+
+.header-netWorks,
+.footer-netWorks {
+    display: flex;
+    justify-content: space-around;
+    width: 140px;
+}
+
+.header-netWorks div,
+.footer-netWorks div {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 1s;
+    -ms-transition: box-shadow 1s;
+    -webkit-transition: box-shadow 1s;
+    -moz-transition: box-shadow 1s;
 }
 
 /* -----------============ header ============----------- */
@@ -120,26 +157,6 @@ header {
 
 .navigation {
     display: flex;
-}
-
-.header-logo {
-    position: relative;
-    background: #ffff;
-    border: 5px double #000;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-.header-logoImg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    width: 75%;
-    height: auto;
 }
 
 .header-list {
@@ -175,22 +192,6 @@ header {
 
 .header-listItem-links:hover::before {
     opacity: 1;
-}
-
-.header-netWorks {
-    display: flex;
-    justify-content: space-around;
-    width: 140px;
-}
-
-.header-netWorks div {
-    width: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: box-shadow 1s;
-    -ms-transition: box-shadow 1s;
-    -webkit-transition: box-shadow 1s;
-    -moz-transition: box-shadow 1s;
 }
 
 @keyframes shake {
@@ -486,7 +487,7 @@ header {
 /* -----------============ priceResidence ============----------- */
 
 .priceResidence {
-    background: url(./assets/background/) center no-repeat;
+    background: url(./assets/background/Depositphotos_2101021_l-2015.jpg) center no-repeat;
     background-size: cover;
     padding: 40px 0;
 }
@@ -647,6 +648,42 @@ header {
     top: 0.6em;
 }
 
+/* -----------============ footer ============----------- */
+
+footer {
+    background: url(./assets/background/4015db3053c401bf5c6d3eef84d7c583.jpg) center no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+}
+
+.footer>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.footer-title {
+    font: 100 18px 'RobotoSlab-Medium';
+    text-align: center;
+    padding-bottom: 23.5px;
+    border-bottom: 2px solid #ffff;
+}
+
+.footer-netWorks {
+    margin: 0 auto;
+}
+
 /* -----------============ additions ============----------- */
 
 .hostelInfo,
@@ -681,9 +718,10 @@ header {
 /* -----------============ media ============----------- */
 
 @media (min-width: 768px) {
-    contacts,
+    .slider,
     .hostelInfo,
-    .slider {
+    .contacts,
+    .priceResidence {
         background-attachment: fixed;
     }
 
@@ -711,19 +749,22 @@ header {
 }
 
 @media (min-width: 1024px) {
-    .header-netWorks div:hover {
+    .header-netWorks div:hover,
+    .footer-netWorks div:hover {
         animation: shake .3s forwards ease infinite;
         -webkit-animation: shake .3s forwards ease infinite;
         -moz-animation: shake .3s forwards ease infinite;
         -o-animation: shake .3s forwards ease infinite;
     }
 
-    .header-netWorks-viber:hover {
+    .header-netWorks-viber:hover,
+    .footer-netWorks-viber:hover {
         box-shadow: 0px 0px 0 4px #681f7b;
         -webkit-box-shadow: 0px 0px 0 4px #681f7b;
     }
 
-    .header-netWorks-teleg:hover {
+    .header-netWorks-teleg:hover,
+    .footer-netWorks-teleg:hover  {
         box-shadow: 0px 0px 0 4px #0091c8;
         -webkit-box-shadow: 0px 0px 0 4px #0091c8;
     }
