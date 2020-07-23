@@ -66,6 +66,22 @@ section {
     z-index: 996;
 }
 
+.buttonUp {
+    position: fixed;
+    background: #ffff;
+    border-radius: 50%;
+    transition: visibility .5s, opacity .5s;
+    border: 2px solid #000;
+    width: 70px;
+    height: 70px;
+    bottom: 1em;
+    right: 2em;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+}
+
 button,
 header,
 .slider,
@@ -382,7 +398,10 @@ header {
 
 .hostelInfo-wrapper {
     max-width: 600px;
+    transform: translateY(200px);
     margin: 0 auto;
+    transition: transform 1s, opacity 1s;
+    opacity: 0;
 }
 
 .hostelInfo-wrapperInfo,
@@ -487,7 +506,7 @@ header {
 /* -----------============ priceResidence ============----------- */
 
 .priceResidence {
-    background: url(./assets/background/Depositphotos_2101021_l-2015.jpg) center no-repeat;
+    background: url(./assets/background) center no-repeat;
     background-size: cover;
     padding: 40px 0;
 }
