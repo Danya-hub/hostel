@@ -17,6 +17,10 @@ body {
     background: #000;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 a,
 p,
 span,
@@ -28,10 +32,6 @@ h5,
 h6,
 button {
     color: #ffff;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 button {
@@ -83,8 +83,8 @@ header,
 }
 
 section:not(.header):not(.footer) {
-    box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: inset 7px 4px 61px 44px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 7px 4px 30px 20px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset 7px 4px 61px 20px rgba(0, 0, 0, 0.75);
 }
 
 .hostelInfo-mainTitle,
@@ -687,7 +687,8 @@ footer {
 /* -----------============ additions ============----------- */
 
 .hostelInfo,
-.menuBlock-wrapper {
+.menuBlock-wrapper,
+.priceResidence {
     background-blend-mode: multiply;
     background-color: silver;
 }
