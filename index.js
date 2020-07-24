@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
         priceResidenceMainTitle = document.querySelector('.priceResidence-mainTitle'),
         priceResidenceWrapper = document.querySelector('.priceResidence-wrapper');
 
-    console.log(scroll);
+    // console.log(scroll);
     if (scroll !== 0) {
         buttonUp.style.visibility = 'visible';
         buttonUp.style.opacity = 0.4;
