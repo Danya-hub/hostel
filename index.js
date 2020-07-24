@@ -11,9 +11,11 @@ window.addEventListener('scroll', () => {
     const buttonUp = document.querySelector('.buttonUp'),
         hostelInfoWrapper = document.querySelector('.hostelInfo-wrapper'),
         priceResidenceMainTitle = document.querySelector('.priceResidence-mainTitle'),
-        priceResidenceWrapper = document.querySelector('.priceResidence-wrapper');
+        priceResidenceWrapper = document.querySelector('.priceResidence-wrapper'),
+        contactsMainTitle = document.querySelector('.contacts-mainTitle'),
+        contactsWrapper = document.querySelector('.contacts-wrapper'); 
 
-    // console.log(scroll);
+    console.log(scroll);
     if (scroll !== 0) {
         buttonUp.style.visibility = 'visible';
         buttonUp.style.opacity = 0.4;
@@ -32,8 +34,18 @@ window.addEventListener('scroll', () => {
         priceResidenceMainTitle.classList.remove('invisible');
     }
 
-    if (scroll >= 1000) {
+    if (scroll > 1000) {
         priceResidenceWrapper.style.transform = 'translateX(0px)';
         priceResidenceWrapper.classList.remove('invisible');
+    }
+
+    if (scroll > 1550) {
+        contactsMainTitle.style.transform = 'translateY(0px)';
+        contactsMainTitle.classList.remove('invisible');
+    }
+
+    if (scroll > 1650) {
+        contactsWrapper.style.transform = 'translateX(0px)';
+        contactsWrapper.classList.remove('invisible');
     }
 })

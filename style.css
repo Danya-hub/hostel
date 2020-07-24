@@ -129,16 +129,35 @@ section:not(.header):not(.footer) {
     margin: 0 auto;
 }
 
-.priceResidence-mainTitle {
-    transform: translateY(-100px);
-    -webkit-transform: translateY(-100px);
-    -ms-transform: translateY(-100px);
-    -moz-transform: translateY(-100px);
-    -o-transform: translateY(-100px);
+.priceResidence-mainTitle,
+.contacts-mainTitle {
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -o-transform: translateY(100px);
     transition: transform .5s, opacity .5s;
     -ms-transition: transform .5s, opacity .5s;
     -webkit-transition: transform .5s, opacity .5s;
     -moz-transition: transform .5s, opacity .5s;
+}
+
+.priceResidence-wrapper,
+.contacts-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -o-transform: translateX(200px);
+    transition: all 1s;
+    -ms-transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    margin: 0 auto;
 }
 
 .header-logo,
@@ -584,23 +603,6 @@ header {
     background: url(./assets/background/gorod-ulitsa-doma-1.jpg) center no-repeat;
     background-size: cover;
     padding: 40px 0;
-}
-
-.priceResidence-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
-    transform: translateX(200px);
-    -webkit-transform: translateX(200px);
-    -ms-transform: translateX(200px);
-    -moz-transform: translateX(200px);
-    -o-transform: translateX(200px);
-    transition: all 1s;
-    -ms-transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    margin: 0 auto;
 }
 
 .priceResidence-wrapper>div {
