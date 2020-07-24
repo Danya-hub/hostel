@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
         contactsMainTitle = document.querySelector('.contacts-mainTitle'),
         contactsWrapper = document.querySelector('.contacts-wrapper'); 
 
-    console.log(scroll);
+    // console.log(scroll);
     if (scroll !== 0) {
         buttonUp.style.visibility = 'visible';
         buttonUp.style.opacity = 0.4;
@@ -39,12 +39,12 @@ window.addEventListener('scroll', () => {
         priceResidenceWrapper.classList.remove('invisible');
     }
 
-    if (scroll > 1550) {
+    if (scroll > 1450) {
         contactsMainTitle.style.transform = 'translateY(0px)';
         contactsMainTitle.classList.remove('invisible');
     }
 
-    if (scroll > 1650) {
+    if (scroll > 1550) {
         contactsWrapper.style.transform = 'translateX(0px)';
         contactsWrapper.classList.remove('invisible');
     }
