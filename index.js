@@ -7,9 +7,11 @@ header();
 hostelInfo();
 
 window.addEventListener('scroll', () => {
-    const scroll = window.pageYOffset;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const buttonUp = document.querySelector('.buttonUp'),
-        hostelInfoWrapper = document.querySelector('.hostelInfo-wrapper')
+        hostelInfoWrapper = document.querySelector('.hostelInfo-wrapper'),
+        priceResidenceMainTitle = document.querySelector('.priceResidence-mainTitle'),
+        priceResidenceWrapper = document.querySelector('.priceResidence-wrapper');
 
     console.log(scroll);
     if (scroll !== 0) {
@@ -21,8 +23,17 @@ window.addEventListener('scroll', () => {
     }
 
     if (scroll > 300) {
-        hostelInfoWrapper.style.visibility = 'visible';
         hostelInfoWrapper.style.transform = 'translateY(0px)';
-        hostelInfoWrapper.style.opacity = '1';
+        hostelInfoWrapper.classList.remove('invisible');
     } 
+    
+    if (scroll > 900) {
+        priceResidenceMainTitle.style.transform = 'translateY(0px)';
+        priceResidenceMainTitle.classList.remove('invisible');
+    }
+
+    if (scroll >= 1000) {
+        priceResidenceWrapper.style.transform = 'translateX(0px)';
+        priceResidenceWrapper.classList.remove('invisible');
+    }
 })
