@@ -10,6 +10,9 @@
 
 body {
     font-size: 100%;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
 }
 
 ::selection {
@@ -821,8 +824,8 @@ footer {
 }
 
 .menuBlockActive {
-    right: 0;
     visibility: visible;
+    right: 0;
 }
 
 .activeMenuLink span {
