@@ -25,27 +25,27 @@ window.addEventListener('scroll', () => {
     }
 
     if (scroll > 300) {
-        hostelInfoWrapper.style.transform = 'translateY(0px)';
+        hostelInfoWrapper.classList.add('translateActive')
         hostelInfoWrapper.classList.remove('invisible');
     } 
     
     if (scroll > 900) {
-        priceResidenceMainTitle.style.transform = 'translateY(0px)';
+        priceResidenceMainTitle.classList.add('translateActive')
         priceResidenceMainTitle.classList.remove('invisible');
     }
 
     if (scroll > 1000) {
-        priceResidenceWrapper.style.transform = 'translateX(0px)';
+        priceResidenceWrapper.classList.add('translateActive')
         priceResidenceWrapper.classList.remove('invisible');
     }
 
     if (scroll > 1450) {
-        contactsMainTitle.style.transform = 'translateY(0px)';
+        contactsMainTitle.classList.add('translateActive')
         contactsMainTitle.classList.remove('invisible');
     }
 
     if (scroll > 1550) {
-        contactsWrapper.style.transform = 'translateX(0px)';
+        contactsWrapper.classList.add('translateActive')
         contactsWrapper.classList.remove('invisible');
     }
 })
