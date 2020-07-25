@@ -10,7 +10,16 @@ const header = () => {
         blackout = document.querySelector('.blackout'),
         menuBlockWrapper = document.querySelector('.menuBlock-wrapper'),
         listItemLinks = document.querySelectorAll('.header-listItem-links'),
+        logoTxt = document.querySelector('.header-logoTxt'),
+        span = document.querySelector('.header-logoTxt span'),
+        logoTxtName = document.querySelector('.header-logoTxt-name'),
         body = document.querySelector('body');
+
+    const logoTxtInverted = () => {
+        logoTxt.innerHTML = logoTxtName.textContent.split('').map(e => `<span>${e}</span>`).join('');
+    }
+
+    logoTxtInverted();
 
     const laptopChanges = () => {
         if (laptop.matches) {

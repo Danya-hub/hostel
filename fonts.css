@@ -17,3 +17,8 @@
     src: url(./fonts/RobotoSlab-Regular.ttf);
     font-family: 'RobotoSlab-Regular';
 }
+
+@font-face {
+    src: url(./fonts/Pacifico-Regular.ttf);
+    font-family: 'Pacifico-Regular';
+}
