@@ -11,8 +11,8 @@ const header = () => {
         menuBlockWrapper = document.querySelector('.menuBlock-wrapper'),
         listItemLinks = document.querySelectorAll('.header-listItem-links'),
         logoTxt = document.querySelector('.header-logoTxt'),
-        span = document.querySelector('.header-logoTxt span'),
         logoTxtName = document.querySelector('.header-logoTxt-name'),
+        buttonUp = document.querySelector('.buttonUp'),
         body = document.querySelector('body');
 
     const logoTxtInverted = () => {
@@ -30,6 +30,43 @@ const header = () => {
             menuBlockWrapper.append(telWrapper);
         }
     }
+
+    const scrollTo = (e) => {
+        window.scroll({
+            left: 0,
+            top: e.offsetTop,
+            behavior: 'smooth'
+        })
+        console.log(e.offsetTop);
+    }
+
+    buttonUp.addEventListener('click', () => {
+        scrollTo(header);
+    })
+
+    listItem.addEventListener('click', (e) => {
+        const hostelInfo = document.querySelector('.hostelInfo'),
+            priceResidence = document.querySelector('.priceResidence'),
+            contacts = document.querySelector('.contacts');
+
+        if (e.target === e.currentTarget) {
+            return
+        }
+
+        switch (e.target.dataset.link) {
+            case 'description':
+                scrollTo(hostelInfo);
+                break;
+            case 'price':
+                scrollTo(priceResidence);
+                break;
+            case 'contacts':
+                scrollTo(contacts);
+                break;
+            default:
+                break;
+        }
+    });
 
     const tabletChanges = () => {
         if (tablet.matches) {
