@@ -1,8 +1,15 @@
 $(document).ready(function() {
     $('a[href^="#"]').click(function() {
-        var target = $(this).attr('href');
+        var links = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(target).offset().top
         }, 700)
     });
+
+    $('.buttonUp').click(function() {
+        var topSection = $('#header');
+        $('html, body').animate({
+            scrollTop: $(topSection).offset().top
+        }, 500)
+    })
 });
