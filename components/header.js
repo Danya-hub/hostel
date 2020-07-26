@@ -49,10 +49,9 @@ const header = () => {
             priceResidence = document.querySelector('.priceResidence'),
             contacts = document.querySelector('.contacts');
 
-            console.log(e.target);
-        if (e.target === e.currentTarget) {
-            return
-        }
+        // if (e.target === e.currentTarget) {
+        //     return
+        // }
 
         switch (e.target.dataset.link) {
             case 'description':
