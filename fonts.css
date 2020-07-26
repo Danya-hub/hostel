@@ -22,3 +22,8 @@
     src: url(./fonts/Pacifico-Regular.ttf);
     font-family: 'Pacifico-Regular';
 }
+
+@font-face {
+    src: url(./fonts/ABeeZee-Regular.ttf);
+    font-family: 'ABeeZee-Regular';
+}

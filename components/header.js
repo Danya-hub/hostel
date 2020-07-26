@@ -1,7 +1,7 @@
 'use strict';
 
 const header = () => {
-    const netWorks = document.querySelector('.header-netWorks'),
+    const telWrapper = document.querySelector('.header-telWrapper'),
         listItem = document.querySelector('.header-list'),
         burgerMenuLink = document.querySelector('.header-menuLinks'),
         menuBlock = document.querySelector('.menuBlock'),
@@ -24,10 +24,10 @@ const header = () => {
     const laptopChanges = () => {
         if (laptop.matches) {
             burgerMenuLink.style.display = 'none';
-            header.append(netWorks);
+            header.append(telWrapper);
         } else {
             burgerMenuLink.style.display = 'flex';
-            menuBlockWrapper.append(netWorks);
+            menuBlockWrapper.append(telWrapper);
         }
     }
 
