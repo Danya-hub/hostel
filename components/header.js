@@ -12,7 +12,6 @@ const header = () => {
         listItemLinks = document.querySelectorAll('.header-listItem-links'),
         logoTxt = document.querySelector('.header-logoTxt'),
         logoTxtName = document.querySelector('.header-logoTxt-name'),
-        buttonUp = document.querySelector('.buttonUp'),
         body = document.querySelector('body');
 
     const logoTxtInverted = () => {
@@ -59,6 +58,15 @@ const header = () => {
             blackout.style.display = 'none';
             body.style.overflow = 'unset';
         }
+
+        if (burgerMenuLink.classList.contains('activeMenuLink')) {
+            blackout.addEventListener('click', () => {
+                burgerMenuLink.classList.remove('activeMenuLink');
+                menuBlock.classList.remove('menuBlockActive');
+                blackout.style.display = 'none';
+                body.style.overflow = 'unset';
+            })
+        } 
     })
 
     for (const listItemLink of listItemLinks) {
