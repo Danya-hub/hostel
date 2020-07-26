@@ -848,11 +848,8 @@ header {
 
 .contacts-wrapperInfo-txt span {
     position: relative;
-    margin: 10px 0 0 30px;
-}
-
-.contacts-wrapperInfo-location {
     font: 100 17px 'RobotoSlab-Regular';
+    margin: 10px 0 0 30px;
 }
 
 .contacts-wrapperInfo-txt span::before {
@@ -897,8 +894,7 @@ footer {
     opacity: 0;
 }
 
-.header-telWrapper-linkTel,
-.contacts-wrapperInfo-tel {
+.header-telWrapper-linkTel {
     font-family: 'ABeeZee-Regular';
 }
 
