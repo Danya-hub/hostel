@@ -299,6 +299,7 @@ header {
 }
 
 .header-telWrapper-blockHover {
+    display: none;
     position: absolute;
     background: #ffff;
     transition: opacity .5s, visibility .5s;
@@ -309,9 +310,10 @@ header {
     border-radius: 10px;
     width: 200px;
     height: fit-content;
-    bottom: 2em;
-    left: -1.5em;
-    right: 0;
+    top: 0;
+    bottom: 0;
+    left: unset;
+    right: 9em;
     margin: auto;
     padding: 10px;
     visibility: hidden;
@@ -326,9 +328,11 @@ header {
     border-top: 10px solid #ffff;
     width: 0;
     height: 0;
-    bottom: -0.5em;
-    left: 0;
-    right: 0;
+    transform: rotate(-90deg);
+    left: unset;
+    right: -1.3em;
+    top: 0;
+    bottom: 0;
     margin: auto;
     z-index: 5;
 }
@@ -981,18 +985,7 @@ footer {
     }
 
     .header-telWrapper-blockHover {
-        top: 0;
-        bottom: 0;
-        left: unset;
-        right: 9em;
-    }
-
-    .header-telWrapper-blockHover:after {
-        transform: rotate(-90deg);
-        left: unset;
-        right: -1.3em;
-        top: 0;
-        bottom: 0;
+        display: unset;
     }
 }
 
