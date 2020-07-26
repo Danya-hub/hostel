@@ -225,8 +225,9 @@ header {
 
 .header-logoTxt span {
     position: absolute;
-    font: 100 18px 'Pacifico-Regular';
+    font: 100 21px 'Pacifico-Regular';
     transform-origin: top;
+    width: 7px;
     padding-top: 50px;
 }
 
@@ -711,8 +712,8 @@ header {
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     margin: 30px;
     padding: 20px 0;
     animation: verticalMovement 4s forwards ease infinite;
