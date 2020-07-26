@@ -333,7 +333,6 @@ header {
     top: 0;
     bottom: 0;
     margin: auto;
-    z-index: 5;
 }
 
 .header-telWrapper-blockHoverTxt {
