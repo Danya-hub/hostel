@@ -323,14 +323,13 @@ header {
 .header-telWrapper-blockHover::after {
     content: '';
     position: absolute;
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
-    border-top: 10px solid #ffff;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid #ffff;
+    border-top: 20px solid transparent;
     width: 0;
     height: 0;
-    transform: rotate(-90deg);
     left: unset;
-    right: -1.3em;
+    right: -0.5em;
     top: 0;
     bottom: 0;
     margin: auto;
