@@ -291,9 +291,9 @@ header {
     align-items: center;
 }
 
-.header-listItem {
+/* .header-listItem {
     padding: 5px 20px;
-}
+} */
 
 .header-listItem-links {
     position: relative;

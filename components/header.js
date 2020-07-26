@@ -37,7 +37,7 @@ const header = () => {
             top: e.offsetTop,
             behavior: 'smooth'
         })
-        console.log(e.offsetTop);
+        // console.log(e.offsetTop);
     }
 
     buttonUp.addEventListener('click', () => {
@@ -49,6 +49,7 @@ const header = () => {
             priceResidence = document.querySelector('.priceResidence'),
             contacts = document.querySelector('.contacts');
 
+            console.log(e.target);
         if (e.target === e.currentTarget) {
             return
         }
