@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('a[href^="#"]').click(function() {
         var links = $(this).attr('href');
         $('html, body').animate({
-            scrollTop: $(target).offset().top
+            scrollTop: $(links).offset().top
         }, 700)
     });
 

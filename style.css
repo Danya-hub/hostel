@@ -817,6 +817,14 @@ footer {
     padding: 20px 0;
 }
 
+.footer-copyrightWrapper {
+    border-top: 2px solid #ffff;
+    font: 100 15px 'RobotoSlab-Light';
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
 /* -----------============ additions ============----------- */
 
 .hostelInfo,
