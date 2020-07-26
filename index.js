@@ -15,7 +15,6 @@ window.addEventListener('scroll', () => {
         contactsMainTitle = document.querySelector('.contacts-mainTitle'),
         contactsWrapper = document.querySelector('.contacts-wrapper'); 
 
-    // console.log(scroll);
     if (scroll !== 0) {
         buttonUp.style.visibility = 'visible';
         buttonUp.style.opacity = 0.4;

@@ -31,43 +31,6 @@ const header = () => {
         }
     }
 
-    const scrollTo = (e) => {
-        window.scroll({
-            left: 0,
-            top: e.offsetTop,
-            behavior: 'smooth'
-        })
-        // console.log(e.offsetTop);
-    }
-
-    buttonUp.addEventListener('click', () => {
-        scrollTo(header);
-    })
-
-    listItem.addEventListener('click', (e) => {
-        const hostelInfo = document.querySelector('.hostelInfo'),
-            priceResidence = document.querySelector('.priceResidence'),
-            contacts = document.querySelector('.contacts');
-
-        // if (e.target === e.currentTarget) {
-        //     return
-        // }
-
-        switch (e.target.dataset.link) {
-            case 'description':
-                scrollTo(hostelInfo);
-                break;
-            case 'price':
-                scrollTo(priceResidence);
-                break;
-            case 'contacts':
-                scrollTo(contacts);
-                break;
-            default:
-                break;
-        }
-    });
-
     const tabletChanges = () => {
         if (tablet.matches) {
             navigation.append(listItem);
