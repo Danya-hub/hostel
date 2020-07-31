@@ -1,7 +1,7 @@
 'use strict';
 
-import header from "./components/header.js";
-import hostelInfo from "./components/hostelInfo.js";
+import header from "./js/header.js";
+import hostelInfo from "./js/hostelInfo.js";
 
 header();
 hostelInfo();
