@@ -225,7 +225,7 @@ header {
 
 .header-logoTxt span {
     position: absolute;
-    font: 100 18px 'Pacifico-Regular';
+    font: 100 17px 'Pacifico-Regular';
     transform-origin: top;
     text-transform: uppercase;
     width: 15px;
