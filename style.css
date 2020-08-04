@@ -132,34 +132,12 @@ section:not(.header):not(.footer) {
     margin: 0 auto;
 }
 
-.priceResidence-mainTitle,
-.contacts-mainTitle {
-    transform: translate(0px, 100px);
-    -webkit-transform: translate(0px, 100px);
-    -ms-transform: translate(0px, 100px);
-    -moz-transform: translate(0px, 100px);
-    -o-transform: translate(0px, 100px);
-    transition: transform .5s, opacity .5s;
-    -ms-transition: transform .5s, opacity .5s;
-    -webkit-transition: transform .5s, opacity .5s;
-    -moz-transition: transform .5s, opacity .5s;
-}
-
 .priceResidence-wrapper,
 .contacts-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 800px;
-    transform: translate(200px, 0px);
-    -webkit-transform: translate(200px, 0px);
-    -ms-transform: translate(200px, 0px);
-    -moz-transform: translate(200px, 0px);
-    -o-transform: translate(200px, 0px);
-    transition: all 1s;
-    -ms-transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
     margin: 0 auto;
 }
 
@@ -516,15 +494,6 @@ header {
 
 .hostelInfo-wrapper {
     max-width: 600px;
-    transform: translate(0px, 200px);
-    -webkit-transform: translate(0px, 200px);
-    -ms-transform: translate(0px, 200px);
-    -moz-transform: translate(0px, 200px);
-    -o-transform: translate(0px, 200px);
-    transition: all 1s;
-    -ms-transition: all 1s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
     margin: 0 auto;
 }
 
