@@ -147,8 +147,8 @@ section:not(.header):not(.footer) {
     background: #ffff;
     border: 5px double #000;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .header-logoHostelImg,
@@ -207,7 +207,7 @@ header {
     transform-origin: top;
     text-transform: uppercase;
     width: 15px;
-    padding-top: 55px;
+    padding-top: 45px;
 }
 
 .header-logoTxt span:nth-child(1) {
@@ -258,10 +258,6 @@ header {
     -o-transform: rotate(-50deg);
 }
 
-.navigation {
-    display: flex;
-}
-
 .header-list {
     display: flex;
     flex-direction: column;
@@ -302,8 +298,8 @@ header {
     flex-direction: column;
     -ms-flex-direction: column;
     justify-content: space-between;
-    width: 40px;
-    height: 35px;
+    width: 35px;
+    height: 30px;
     z-index: 997;
 }
 
@@ -328,8 +324,8 @@ header {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     visibility: hidden;
-    width: 300px;
-    height: 340px;
+    width: 260px;
+    height: 300px;
     bottom: 0;
     top: 1em;
     right: -100%;
@@ -840,19 +836,19 @@ footer {
 }
 
 .activeMenuLink::before {
-    transform: translateY(15px) rotate(-45deg);
-    -webkit-transform: translateY(15px) rotate(-45deg);
-    -ms-transform: translateY(15px) rotate(-45deg);
-    -moz-transform: translateY(15px) rotate(-45deg);
-    -o-transform: translateY(15px) rotate(-45deg);
+    transform: translateY(13px) rotate(-45deg);
+    -webkit-transform: translateY(13px) rotate(-45deg);
+    -ms-transform: translateY(13px) rotate(-45deg);
+    -moz-transform: translateY(13px) rotate(-45deg);
+    -o-transform: translateY(13px) rotate(-45deg);
 }
 
 .activeMenuLink::after {
-    transform: translateY(-15px) rotate(45deg);
-    -webkit-transform: translateY(-15px) rotate(45deg);
-    -ms-transform: translateY(-15px) rotate(45deg);
-    -moz-transform: translateY(-15px) rotate(45deg);
-    -o-transform: translateY(-15px) rotate(45deg);
+    transform: translateY(-13px) rotate(45deg);
+    -webkit-transform: translateY(-13px) rotate(45deg);
+    -ms-transform: translateY(-13px) rotate(45deg);
+    -moz-transform: translateY(-13px) rotate(45deg);
+    -o-transform: translateY(-13px) rotate(45deg);
 }
 
 /* -----------============ media ============----------- */
@@ -864,6 +860,16 @@ footer {
     .contacts,
     .priceResidence {
         background-attachment: fixed;
+    }
+
+    .header-logoWrapper,
+    .footer-logoHostel {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-logoTxt span {
+        padding-top: 55px;
     }
 
     .header-list {

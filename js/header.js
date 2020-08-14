@@ -20,20 +20,12 @@ const header = () => {
 
     logoTxtInverted();
 
-    const laptopChanges = () => {
-        if (laptop.matches) {
-            burgerMenuLink.style.display = 'none';
-            header.append(telWrapper);
-        } else {
-            burgerMenuLink.style.display = 'flex';
-            menuBlockWrapper.append(telWrapper);
-        }
-    }
-
     const tabletChanges = () => {
         if (tablet.matches) {
+            burgerMenuLink.style.display = 'none';
             navigation.append(listItem);
         } else {
+            burgerMenuLink.style.display = 'flex';
             menuBlockWrapper.append(listItem);
         }
     }
@@ -41,10 +33,6 @@ const header = () => {
     const tablet = window.matchMedia('(min-width: 760px)');
     tabletChanges(tablet);
     tablet.addListener(tabletChanges);
-
-    const laptop = window.matchMedia("(min-width: 1024px)");
-    laptopChanges(laptop);
-    laptop.addListener(laptopChanges);
 
     burgerMenuLink.addEventListener('click', (e) => {
         e.preventDefault();
