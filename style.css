@@ -715,7 +715,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     height: 180px;
-    margin: 25px 0 0 20px;
+    margin-top: 25px;
 }
 
 .contacts-wrapperInfo-txt:first-child {
@@ -735,16 +735,6 @@ header {
     height: 20px;
     left: -1.1em;
     top: 0.3em;
-}
-
-.logoAdress::before {
-    background: url(./assets/logo/pin.svg) center no-repeat;
-    background-size: cover;
-}
-
-.logoTel::before {
-    background: url(./assets/logo/call.svg) center no-repeat;
-    background-size: cover;
 }
 
 .contacts-wrapperInfo-location {
