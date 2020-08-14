@@ -19,12 +19,13 @@ const header = () => {
     }
 
     logoTxtInverted();
-
     const tabletChanges = () => {
         if (tablet.matches) {
             burgerMenuLink.style.display = 'none';
+            navigation.style.display = 'block';
             navigation.append(listItem);
         } else {
+            navigation.style.display = 'none';
             burgerMenuLink.style.display = 'flex';
             menuBlockWrapper.append(listItem);
         }
