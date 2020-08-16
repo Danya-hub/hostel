@@ -2,6 +2,9 @@
 
 
 const hostelInfo = () => {
+
+    // -------------> links <-------------
+
     const wrapperInfo = document.querySelector('.hostelInfo-wrapperInfo'),
         buttonReadMore = document.querySelector('.hostelInfo-buttonReadMore'),
         modalIconWrapperHostel = document.querySelector('.hostelInfo-modalIcon-wrapper'),
@@ -9,6 +12,8 @@ const hostelInfo = () => {
         modalIconCloseButton = document.querySelector('.hostelInfo-modalIcon-closeButton'),
         blackout = document.querySelector('.blackout'),
         body = document.querySelector('body')
+
+    // -------------> text about the hostel <-------------
 
     const infoHostel = `                    
     <p class="hostelInfo-wrapperInfo-txt">
@@ -36,8 +41,11 @@ const hostelInfo = () => {
     </p>
     `;
 
+    // -------------> abbreviated text <-------------
+
     wrapperInfo.innerHTML = infoHostel.split('').slice(0, 700).join('') + '...';
 
+    // -------------> modal icon for information hostel <-------------
     const openModalIconHostel = () => {
         modalIconWrapperHostel.innerHTML = infoHostel;
         buttonReadMore.addEventListener('click', () => {
@@ -58,3 +66,5 @@ const hostelInfo = () => {
 }
 
 export default hostelInfo;
+
+// -------------> The End <-------------

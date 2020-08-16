@@ -1,23 +1,27 @@
 'use strict';
 
 const header = () => {
-    const telWrapper = document.querySelector('.header-telWrapper'),
-        listItem = document.querySelector('.header-list'),
-        burgerMenuLink = document.querySelector('.header-menuLinks'),
-        menuBlock = document.querySelector('.menuBlock'),
-        navigation = document.querySelector('.navigation'),
-        header = document.querySelector('.header'),
-        blackout = document.querySelector('.blackout'),
-        menuBlockWrapper = document.querySelector('.menuBlock-wrapper'),
-        listItemLinks = document.querySelectorAll('.header-listItem-links'),
-        logoTxt = document.querySelector('.header-logoTxt'),
-        logoTxtName = document.querySelector('.header-logoTxt-name'),
-        body = document.querySelector('body');
 
+    // -------------> links <-------------
+    
+    const listItem = document.querySelector('.header-list');
+    const burgerMenuLink = document.querySelector('.header-menuLinks');
+    const menuBlock = document.querySelector('.menuBlock');
+    const navigation = document.querySelector('.navigation');
+    const blackout = document.querySelector('.blackout');
+    const menuBlockWrapper = document.querySelector('.menuBlock-wrapper');
+    const logoTxt = document.querySelector('.header-logoTxt');
+    const logoTxtName = document.querySelector('.header-logoTxt-name');
+    const body = document.querySelector('body');
+    
+    // -------------> interval letters <-------------
+    
     const logoTxtInverted = () => {
         logoTxt.innerHTML = logoTxtName.textContent.split('').map(e => `<span>${e}</span>`).join('');
     }
 
+    // -------------> media rules <-------------
+    
     logoTxtInverted();
     const tabletChanges = () => {
         if (tablet.matches) {
@@ -35,6 +39,8 @@ const header = () => {
     tabletChanges(tablet);
     tablet.addListener(tabletChanges);
 
+    // -------------> burger menu for links <-------------
+    
     burgerMenuLink.addEventListener('click', (e) => {
         e.preventDefault();
         burgerMenuLink.classList.toggle('activeMenuLink');
@@ -55,17 +61,10 @@ const header = () => {
                 blackout.style.display = 'none';
                 body.style.overflow = 'unset';
             })
-        } 
+        }
     })
-
-    for (const listItemLink of listItemLinks) {
-        listItemLink.addEventListener('click', () => {
-            burgerMenuLink.classList.remove('activeMenuLink');
-            menuBlock.classList.remove('menuBlockActive');
-            blackout.style.display = 'none';
-            body.style.overflow = 'unset';
-        })
-    }
 }
 
 export default header;
+
+// -------------> The End <-------------

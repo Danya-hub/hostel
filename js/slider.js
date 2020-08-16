@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.slider').slick({
         arrows: true,
         dots: true,
@@ -6,18 +6,18 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         speed: 800,
-        infinite: false, 
+        infinite: false,
         autoplay: true,
-        autoplaySpeed: 2000, 
-        pauseOnHover: true, 
-        pauseOnFocus: false, 
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        pauseOnFocus: false,
         draggable: false,
         waitForAnimate: false,
         centerMode: true,
         variableWidth: true,
-        responsive:[{
+        responsive: [{
             breakpoint: 768,
-            settings:{
+            settings: {
                 arrows: false
             }
         }]
