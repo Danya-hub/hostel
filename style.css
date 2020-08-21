@@ -368,6 +368,7 @@ header {
 
 .slick-list {
     position: absolute;
+    width: 100%;
     height: fit-content;
     top: 0;
     bottom: 0;
@@ -874,10 +875,6 @@ footer {
     .header-list {
         flex-direction: row;
         -ms-flex-direction: row;
-    }
-
-    .slick-list {
-        max-width: 76%;
     }
 
     .hostelInfo-mainTitle,
