@@ -87,6 +87,11 @@ section {
     z-index: 5;
 }
 
+.header-logoHostel,
+.footer-logoHostel {
+    pointer-events: none;
+}
+
 .buttonUp-scrollTop {
     position: relative;
     display: block;
