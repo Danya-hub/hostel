@@ -118,7 +118,7 @@ header,
     height: 65px;
 }
 
-section:not(.header):not(.footer) {
+main section {
     box-shadow: inset 7px 4px 30px 20px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: inset 7px 4px 61px 20px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 7px 4px 61px 20px rgba(0, 0, 0, 0.75);
