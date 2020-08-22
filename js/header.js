@@ -54,13 +54,20 @@ const header = () => {
             body.style.overflow = 'unset';
         }
 
+        const removingIcon = () => {
+            burgerMenuLink.classList.remove('activeMenuLink');
+            menuBlock.classList.remove('menuBlockActive');
+            blackout.style.display = 'none';
+            body.style.overflow = 'unset';
+        }  
+
         if (burgerMenuLink.classList.contains('activeMenuLink')) {
-            blackout.addEventListener('click', () => {
-                burgerMenuLink.classList.remove('activeMenuLink');
-                menuBlock.classList.remove('menuBlockActive');
-                blackout.style.display = 'none';
-                body.style.overflow = 'unset';
-            })
+            blackout.addEventListener('click', removingIcon);
+            listItem.addEventListener('click', (e) => {
+                if (e.target.dataset.link) {
+                    removingIcon();
+                }
+            });
         }
     })
 }
