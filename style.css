@@ -882,15 +882,6 @@ footer {
         -ms-flex-direction: row;
     }
 
-    .hostelInfo-mainTitle,
-    .hostelInfo-buttonReadMore {
-        margin: 40px 0;
-    }
-
-    .hostelInfo-wrapper {
-        margin-right: 0;
-    }
-
     .contacts-map {
         width: 65%;
     }
@@ -903,6 +894,15 @@ footer {
 
     .hostelInfo-modalIcon-wrapper::-webkit-scrollbar {
         display: none;
+    }
+
+    .hostelInfo-mainTitle,
+    .hostelInfo-buttonReadMore {
+        margin: 40px 0;
+    }
+
+    .hostelInfo-wrapper {
+        margin-right: 0;
     }
 }
 
