@@ -200,11 +200,9 @@ header {
     position: absolute;
     width: 15px;
     height: 15px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
 }
 
 .header-logoTxt span {
@@ -860,11 +858,8 @@ footer {
         height: 170px;
     }
 
-    .slider,
-    .hostelInfo,
-    .contacts,
-    .priceResidence {
-        background-attachment: fixed;
+    main section {
+        background-attachment: fixed !important;
     }
 
     .header-logoWrapper,
