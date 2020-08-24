@@ -566,10 +566,6 @@ header {
     width: 20px;
 }
 
-.hostelInfo-modalIcon-wrapper::-webkit-scrollbar-track {
-    background: #fff;
-}
-
 .hostelInfo-modalIcon-wrapper::-webkit-scrollbar-thumb {
     border: 7px solid #ffff;
     background: #505050;
