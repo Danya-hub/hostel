@@ -6,10 +6,10 @@ const header = () => {
     
     const listItem = document.querySelector('.header-list');
     const burgerMenuLink = document.querySelector('.header-menuLinks');
-    const menuBlock = document.querySelector('.menuBlock');
+    const menuIcon = document.querySelector('.menuIcon');
     const navigation = document.querySelector('.navigation');
     const blackout = document.querySelector('.blackout');
-    const menuBlockWrapper = document.querySelector('.menuBlock-wrapper');
+    const menuBlockWrapper = document.querySelector('.menuIcon-wrapper');
     const logoTxt = document.querySelector('.header-logoTxt');
     const logoTxtName = document.querySelector('.header-logoTxt-name');
     const body = document.querySelector('body');
@@ -45,18 +45,18 @@ const header = () => {
         e.preventDefault();
         burgerMenuLink.classList.toggle('activeMenuLink');
         if (burgerMenuLink.classList.contains('activeMenuLink')) {
-            menuBlock.classList.add('menuBlockActive');
+            menuIcon.classList.add('menuBlockActive');
             blackout.style.display = 'block';
             body.style.overflow = 'hidden';
         } else {
-            menuBlock.classList.remove('menuBlockActive');
+            menuIcon.classList.remove('menuBlockActive');
             blackout.style.display = 'none';
             body.style.overflow = 'unset';
         }
 
         const removingIcon = () => {
             burgerMenuLink.classList.remove('activeMenuLink');
-            menuBlock.classList.remove('menuBlockActive');
+            menuIcon.classList.remove('menuBlockActive');
             blackout.style.display = 'none';
             body.style.overflow = 'unset';
         }  

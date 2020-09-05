@@ -331,7 +331,7 @@ header {
     -moz-transition: transform .3s;
 }
 
-.menuBlock {
+.menuIcon {
     position: fixed;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -353,7 +353,7 @@ header {
     z-index: 999;
 }
 
-.menuBlock-wrapper {
+.menuIcon-wrapper {
     display: flex;
     background: url(./assets/background/modalBackground.jpg) center no-repeat;
     background-size: cover;
@@ -365,7 +365,7 @@ header {
     height: 100%;
 }
 
-.menuBlock-title {
+.menuIcon-title {
     font-size: 23px;
     border-bottom: 2px solid #fff;
 }
@@ -803,7 +803,7 @@ footer {
 /* -----------============ additions ============----------- */
 
 .hostelInfo,
-.menuBlock-wrapper,
+.menuIcon-wrapper,
 .priceResidence {
     background-blend-mode: multiply;
     background-color: silver;
@@ -904,7 +904,8 @@ footer {
     }
 
     .hostelInfo-wrapper {
-        margin-right: 0;
+        margin: 0;
+        float: right;
     }
 }
 
