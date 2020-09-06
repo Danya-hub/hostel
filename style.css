@@ -410,6 +410,7 @@ header {
     -ms-transition: opacity 1s, transform 1s;
     -webkit-transition: opacity 1s, transform 1s;
     -moz-transition: opacity 1s, transform 1s;
+    pointer-events: none;
     margin: 20px;
     opacity: 0.5;
 }
