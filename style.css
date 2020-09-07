@@ -472,11 +472,18 @@ header {
 .slick-dots {
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: fit-content;
     bottom: 2em;
     left: 0;
     right: 0;
     margin: auto;
+    padding: 0 40px;
+}
+
+.slick-dots li {
+    margin: 5px 2px;
 }
 
 .slick-dots button {
